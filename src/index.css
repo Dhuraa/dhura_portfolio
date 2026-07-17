@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.nav-active-pill {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item-active {
+  color: white !important;
+}
+
+header.shrunk {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(32, 31, 31, 0.7);
+  border-color: rgba(144, 143, 160, 0.3);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.3),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #c0c1ff, transparent);
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+}
+
+.animate-fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-fade-in-up.stagger-1.visible {
+  transition-delay: 0.05s;
+}
+
+.animate-fade-in-up.stagger-2.visible {
+  transition-delay: 0.15s;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
