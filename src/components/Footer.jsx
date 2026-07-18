@@ -8,9 +8,9 @@ export default function Footer() {
         <h2 className="text-white text-lg font-bold leading-tight tracking-[-0.015em]">DHURA.</h2>
       </div>
       <p className="text-on-surface-variant text-sm font-label-mono uppercase tracking-wider">
-        © {new Date().getFullYear()} Designed &amp; Built by Dhura Mistry. All Rights Reserved.
+        © {new Date().getFullYear()} Designed &amp; Built by Dhura Mistry.
       </p>
-      <div className="flex gap-6">
+      {/* <div className="flex gap-6">
         <a className="text-on-surface-variant hover:text-white transition-colors" href="#">
           <span className="material-symbols-outlined">alternate_email</span>
         </a>
@@ -20,7 +20,7 @@ export default function Footer() {
         <a className="text-on-surface-variant hover:text-white transition-colors" href="#">
           <span className="material-symbols-outlined">code</span>
         </a>
-      </div>
+      </div> */}
     </footer>
   )
 }

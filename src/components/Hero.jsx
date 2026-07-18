@@ -60,15 +60,11 @@ export default function Hero() {
         </Reveal>
 
         {/* Right Column: Ambient glow */}
-        <Reveal
-          className="hidden lg:flex justify-center items-center h-[600px] relative"
-          delay="0.15s"
-        >
+        <Reveal className="lg:flex justify-center items-center h-[600px] relative"delay="0.15s">
   
           <img
             src="/images/memoji.png"
-            alt="Dhura Mistry"
-            className="w-[480px] h-[450px] "/>
+            alt="Dhura Mistry"/>
 
         </Reveal>
       </div>
