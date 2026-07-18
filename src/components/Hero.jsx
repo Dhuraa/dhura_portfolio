@@ -26,27 +26,31 @@ export default function Hero() {
             </p>
           </div>
           <div className="flex flex-wrap gap-5">
-            <button className="px-10 h-16 bg-primary text-on-primary-container rounded-2xl font-bold text-lg hover:shadow-[0_0_30px_rgba(192,193,255,0.4)] hover:scale-105 transition-all">
+            <a
+              href="/DhuraMistry_Resume.pdf"
+              download="DhuraMistry_Resume.pdf"
+              className="inline-flex items-center justify-center px-10 h-16 bg-primary text-on-primary-container rounded-2xl font-bold text-lg hover:shadow-[0_0_30px_rgba(192,193,255,0.4)] hover:scale-105 transition-all"
+            >
               Download Resume
-            </button>
+            </a>
             <button className="px-10 h-16 border-2 border-outline-variant text-white rounded-2xl font-bold text-lg hover:bg-white/5 transition-all">
               Get In Touch
             </button>
           </div>
           <div className="flex items-center gap-8 text-on-surface-variant/60">
-            <a className="hover:text-primary transition-colors flex items-center gap-2 group" href="#">
+            <a className="hover:text-primary transition-colors flex items-center gap-2 group" href="https://github.com/Dhuraa" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
               <span className="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">
                 code
               </span>
               <span className="text-xs font-label-mono tracking-widest uppercase">Github</span>
             </a>
-            <a className="hover:text-primary transition-colors flex items-center gap-2 group" href="#">
+            <a className="hover:text-primary transition-colors flex items-center gap-2 group" href="https://www.linkedin.com/in/dhuramistry" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
               <span className="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">
                 link
               </span>
               <span className="text-xs font-label-mono tracking-widest uppercase">Linkedin</span>
             </a>
-            <a className="hover:text-primary transition-colors flex items-center gap-2 group" href="#">
+            <a className="hover:text-primary transition-colors flex items-center gap-2 group" href="mailto:dhuramist@gmail.com" aria-label="Email">
               <span className="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">
                 mail
               </span>

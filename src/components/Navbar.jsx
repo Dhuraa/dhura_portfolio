@@ -72,9 +72,8 @@ export default function Navbar() {
     <div className="fixed top-6 inset-x-0 z-[100] flex justify-center px-4 md:px-0">
       <header
         id="main-nav"
-        className={`flex items-center gap-6 md:gap-10 whitespace-nowrap backdrop-blur-xl bg-white/5 border border-white/10 rounded-full transition-all duration-300 max-w-fit mx-auto relative group ${
-          shrunk ? 'shrunk px-4' : 'px-6 py-4'
-        }`}
+        className={`flex items-center gap-6 md:gap-10 whitespace-nowrap backdrop-blur-xl bg-white/5 border border-white/10 rounded-full transition-all duration-300 max-w-fit mx-auto relative group ${shrunk ? 'shrunk px-4' : 'px-6 py-4'
+          }`}
       >
         {/* Brand */}
         <div className="flex items-center gap-3 text-white">
@@ -94,9 +93,8 @@ export default function Navbar() {
               ref={(el) => (linkRefs.current[link.id] = el)}
               href={`#${link.id}`}
               onClick={(e) => handleNavClick(e, link.id)}
-              className={`nav-link relative z-10 px-4 py-2 text-sm font-medium leading-normal transition-colors hover:text-white ${
-                activeId === link.id ? 'nav-item-active' : 'text-on-surface-variant'
-              }`}
+              className={`nav-link relative z-10 px-4 py-2 text-sm font-medium leading-normal transition-colors hover:text-white ${activeId === link.id ? 'nav-item-active' : 'text-on-surface-variant'
+                }`}
             >
               {link.label}
             </a>
@@ -105,14 +103,20 @@ export default function Navbar() {
 
         {/* Socials */}
         <div className="flex gap-2">
-          <button className="flex items-center justify-center rounded-full size-10 bg-white/5 hover:bg-white/10 text-white transition-colors">
-            <span className="material-symbols-outlined text-[18px]">terminal</span>
-          </button>
+          <a href="https://github.com/Dhuraa" target="_blank"  rel="noopener noreferrer" aria-label="GitHub Profile">
+            <button className="flex items-center justify-center rounded-full size-10 bg-white/5 hover:bg-white/10 text-white transition-colors">
+              <span className="material-symbols-outlined text-[18px]">
+                terminal
+              </span>
+            </button>
+          </a>
+          <a href="https://www.linkedin.com/in/dhuramistry" target="_blank"  rel="noopener noreferrer" aria-label="LinkedIn Profile">
           <button className="flex items-center justify-center rounded-full size-10 bg-white/5 hover:bg-white/10 text-white transition-colors">
             <svg fill="currentColor" height="18px" viewBox="0 0 256 256" width="18px" xmlns="http://www.w3.org/2000/svg">
               <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z" />
             </svg>
           </button>
+          </a>
         </div>
       </header>
     </div>

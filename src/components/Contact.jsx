@@ -1,22 +1,48 @@
+import emailjs from "@emailjs/browser";
 import { useState } from 'react'
 
 const initialForm = { name: '', email: '', message: '' }
 
 export default function Contact() {
   const [form, setForm] = useState(initialForm)
-  const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Wire this up to your email service / API of choice.
-    console.log('Contact form submitted:', form)
-    setSubmitted(true)
-    setForm(initialForm)
-  }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+
+      setSubmitted(true);
+      setForm(initialForm);
+
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 5000);
+
+    } catch (error) {
+      console.error(error);
+      alert("Failed to send message. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <section className="py-24 max-w-4xl mx-auto w-full" id="contact">
@@ -76,15 +102,15 @@ export default function Contact() {
           />
         </div>
         <button
-          className="w-full h-16 bg-primary text-on-primary-container font-bold text-lg rounded-xl hover:scale-[1.02] active:scale-[0.98] transition-all"
           type="submit"
-        >
-          Send Message
+          disabled={loading}
+          className="w-full h-16 bg-primary text-on-primary-container font-bold text-lg rounded-xl hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed">
+          {loading ? "Sending..." : "Send Message"}
         </button>
         {submitted && (
-          <p className="text-secondary text-sm text-center font-label-mono uppercase tracking-wide">
-            Thanks for reaching out — I&apos;ll get back to you soon.
-          </p>
+          <div className="text-green-400 text-center font-medium mt-4">
+            ✅ Message sent successfully! I'll get back to you soon.
+          </div>
         )}
       </form>
     </section>
