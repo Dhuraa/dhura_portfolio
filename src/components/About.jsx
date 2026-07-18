@@ -12,14 +12,11 @@ export default function About() {
         </div>
         <div className="md:col-span-8 flex flex-col gap-6">
           <p className="text-on-surface-variant text-xl leading-relaxed">
-            I am a dedicated Full Stack Developer with 4 years of hands-on experience in building complex digital
-            products. My journey started with a fascination for how data travels from a server to a beautiful user
-            interface.
+            I'm a Full Stack Software Engineer with 4 years of experience building enterprise applications for the banking and fintech industries. I specialize in frontend development with Angular and React while also developing scalable backend services using Java Spring Boot and Node.js.
           </p>
+
           <p className="text-on-surface-variant text-xl leading-relaxed">
-            I specialize in Angular and React for the frontend, ensuring every interaction feels fluid and
-            responsive. On the backend, I leverage the power of Java and Spring Boot to create robust,
-            enterprise-grade architectures that scale.
+            Throughout my career, I've delivered production-ready features including CRM modules, authentication systems, reporting dashboards, REST APIs, cloud integrations, and performance optimizations. I enjoy solving complex problems, writing clean and maintainable code, and building applications that provide exceptional user experiences.
           </p>
         </div>
       </div>

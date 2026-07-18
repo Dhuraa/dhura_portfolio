@@ -21,8 +21,7 @@ export default function Hero() {
               Developer.
             </h1>
             <p className="text-on-surface-variant text-xl md:text-2xl font-body-lg max-w-lg leading-relaxed">
-              Frontend Specialist (Angular &amp; React). Crafting modern, scalable web experiences with 4 years of
-              professional expertise.
+              I build modern, scalable, and high-performance web applications using Angular, React, Java, and Node.js, transforming complex business requirements into intuitive user experiences.
             </p>
           </div>
           <div className="flex flex-wrap gap-5">
@@ -33,9 +32,10 @@ export default function Hero() {
             >
               Download Resume
             </a>
-            <button className="px-10 h-16 border-2 border-outline-variant text-white rounded-2xl font-bold text-lg hover:bg-white/5 transition-all">
-              Get In Touch
-            </button>
+            <a href="#contact"
+              className="inline-flex items-center justify-center px-10 h-16 border-2 border-outline-variant text-white rounded-2xl font-bold text-lg hover:bg-white/5 transition-all">
+              Get in Touch
+            </a>
           </div>
           <div className="flex items-center gap-8 text-on-surface-variant/60">
             <a className="hover:text-primary transition-colors flex items-center gap-2 group" href="https://github.com/Dhuraa" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
@@ -60,8 +60,16 @@ export default function Hero() {
         </Reveal>
 
         {/* Right Column: Ambient glow */}
-        <Reveal className="hidden lg:flex justify-center items-center h-[600px] relative" delay="0.15s">
-          <div className="absolute inset-0 bg-primary/5 blur-[100px] rounded-full" />
+        <Reveal
+          className="hidden lg:flex justify-center items-center h-[600px] relative"
+          delay="0.15s"
+        >
+  
+          <img
+            src="/images/memoji.png"
+            alt="Dhura Mistry"
+            className="w-[480px] h-[450px] "/>
+
         </Reveal>
       </div>
     </section>

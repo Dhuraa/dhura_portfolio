@@ -13,12 +13,12 @@ export default function Projects() {
           <h2 className="text-primary font-label-mono text-sm tracking-widest uppercase mb-4">Works</h2>
           <h3 className="text-white text-4xl font-display-xl">Selected Projects</h3>
         </div>
-        <a className="text-on-surface-variant hover:text-white transition-colors flex items-center gap-2" href="#">
+        {/* <a className="text-on-surface-variant hover:text-white transition-colors flex items-center gap-2" href="#">
           <span>VIEW ALL</span>
           <span className="material-symbols-outlined">arrow_forward</span>
-        </a>
+        </a> */}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {projects.map((project) => (
           <div
             key={project.title}
