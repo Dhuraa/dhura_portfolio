@@ -30,10 +30,10 @@ export default function Projects() {
                 alt={project.alt}
                 src={project.image}
               />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+              {/* <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                 <button className="bg-white text-black px-4 py-2 rounded-lg font-bold text-sm">Live Demo</button>
                 <button className="bg-black/80 text-white px-4 py-2 rounded-lg font-bold text-sm">Code</button>
-              </div>
+              </div> */}
             </div>
             <div className="p-8">
               <div className="flex gap-2 mb-4">

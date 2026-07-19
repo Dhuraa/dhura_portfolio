@@ -13,13 +13,12 @@ export const experience = [
     role: "Software Development Engineer - I",
     company: "GetVantage • Mumbai",
     points: [
-      "Built scalable enterprise applications using Angular 19/20, NgRx, Angular Signals, Tailwind CSS, and Angular Material.",
-      "Developed RESTful APIs and microservices with Node.js and Express for a scalable loan management platform.",
-      "Built a complete Angular 20 application from scratch, implementing authentication, routing, and report generation.",
-      "Developed CRM lead management and Maker-Checker workflows to improve operational efficiency and reduce manual errors.",
-      "Integrated third-party APIs and cloud storage (Amazon S3, Google Cloud Storage) for secure document management.",
-      "Optimized MongoDB aggregation pipelines, reducing report generation time by approximately 45%.",
-      "Collaborated in Agile teams using Git while building reusable, maintainable components.",
+      "Independently built the frontend of a loan management platform from scratch using Angular (v19/20), NgRx, and Angular Signals, including authentication, routing, and report generation.",
+      "Built RESTful APIs and microservices using Node.js and Express, and automated secure document submission to partner NBFC platforms.",
+      "Optimized filtering performance using RxJS operators (e.g. debounceTime) on the frontend and Node-cache on the backend, reducing unnecessary API calls and improving response times.",
+      "Designed Maker-Checker approval workflows and a CRM-based lead management module, reducing manual validation errors and streamlining lead tracking.",
+      "Optimized MongoDB aggregation pipelines, cutting report generation time by 45%.",
+      "Built reusable Angular components and implemented cloud-based document storage using Amazon S3 and Google Cloud Storage.",
     ],
   },
   {
@@ -29,11 +28,10 @@ export const experience = [
     company: "Tata Consultancy Services • Reserve Bank of India CAS Team",
     points: [
       "Developed enterprise web applications for the Reserve Bank of India's CAS platform using Angular and Spring Boot.",
-      "Built responsive Angular modules with Angular Material and Reactive Forms for complex financial workflows.",
-      "Designed and integrated RESTful APIs using Java Spring Boot for seamless frontend-backend communication.",
-      "Implemented NgRx state management, lazy loading, and optimized SQL queries to improve application performance.",
-      "Developed reusable Angular components, services, and dependency injection patterns for maintainable code.",
-      "Collaborated with cross-functional Agile teams to deliver enterprise banking solutions.",
+      "Built responsive Angular modules with Angular Material and Reactive Forms, implementing advanced filtering and navigation that improved usability for operational teams.",
+      "Designed RESTful APIs using Java Spring Boot and Hibernate/JPA, and optimized SQL queries for efficient backend processing.",
+      "Reduced initial load time by implementing lazy loading and code splitting with Angular Router.",
+      "Integrated NgRx for scalable state management and built reusable Angular services to improve modularity."
     ],
   },
 ];
